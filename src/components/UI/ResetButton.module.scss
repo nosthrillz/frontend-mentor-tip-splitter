@@ -1,0 +1,17 @@
+@import '../../styles/_mixins';
+@import '../../styles/_variables';
+
+.btn {
+    @include btn;
+    background-color: $strong-cyan;
+    color: $darkest-cyan;
+
+    &:hover {
+        background-color: $light-cyan;
+    }
+
+    &:disabled {
+        opacity: .3;
+        pointer-events: none;
+    }
+}

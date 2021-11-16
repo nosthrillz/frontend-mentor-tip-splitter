@@ -1,0 +1,64 @@
+@mixin btn {
+    all: unset;
+    background-color: $darkest-cyan;
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .25rem;
+    padding: .5rem;
+
+    &.active {
+        background-color: $strong-cyan;
+        color: $darkest-cyan;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $light-cyan;
+        color: $darkest-cyan;
+    }
+}
+
+@mixin input {
+    all: unset;
+    font-family: inherit;
+    text-align: right;
+    color: $dark-cyan;
+    font-weight: bold;
+    background-color: $lighter-cyan;
+    font-size: 1.25rem;
+    padding: .5rem;
+    border-radius: .25rem;
+    border: 2px solid transparent;
+
+    &:focus {
+        border: 2px solid $strong-cyan;
+    }
+
+}
+
+@mixin boldedText {
+    &.bolded {
+        color: $darkest-cyan;
+    }
+}
+
+@mixin inputError {
+    &.error {
+        border: 2px solid red;
+    }
+}
+
+@mixin inputFieldText {
+    all: unset;
+    color: $darker-cyan;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+@mixin mediaQuery {
+    @media (max-width: #{$breakpoint}) {
+        @content;
+    }
+ }

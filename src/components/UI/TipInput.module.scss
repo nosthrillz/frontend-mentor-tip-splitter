@@ -1,0 +1,11 @@
+@import '../../styles/_variables';
+@import '../../styles/_mixins';
+
+.customInput {
+    @include input;
+    @include boldedText;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+}

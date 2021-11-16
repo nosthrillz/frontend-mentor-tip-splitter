@@ -1,0 +1,39 @@
+@import '../../styles/_variables';
+@import '../../styles/_mixins';
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .texts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .25rem;
+
+        p {
+            all: unset;
+            font-weight: bold;
+            color: $white;
+        }
+        span {
+            color: $darker-cyan;
+            font-weight: bold;
+            font-size: .8rem;
+        }
+    }
+
+    .value {
+        all: unset;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $strong-cyan;
+        display: flex;
+        align-items: center;
+
+        @include mediaQuery {
+            font-size: 1.5rem;
+        }
+    }
+}
