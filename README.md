@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Live deployment preview
 
-[](https://your-live-site-url.com)
+[tip-splitty.vercel.app](https://tip-splitty.vercel.app/)
 
 ## My process
 
